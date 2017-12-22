@@ -3,6 +3,7 @@ package techbook;
 import techbook.business.*;
 import techbook.data.DBConnector;
 import techbook.data.PostgreSQLErrorCodes;
+import techbook.data.QuerieStrings;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -231,7 +232,34 @@ public class Solution {
      */
     public static ReturnValue addStudent(Student student)
     {
-        
+        if(!(student instanceof Student))
+            return BAD_PARAMS;
+
+        Connection connection = DBConnector.getConnection();
+        PreparedStatement statement = null;
+
+        try
+        {
+            //add to students
+            statement = connection.prepareStatement("INSERT INTO Students VALUES (?, ?, ?)");
+            statement.setInt(1, student.getId());
+            statement.setString(2, student.getName());
+            statement.setString(3, student.getFaculty());
+            statement.execute();
+
+            //add to faculty group
+            //TODO: check architecture of Groups
+            statement = connection.prepareStatement("INSERT INTO Groups VALUE (?, ?)");
+            statement.setInt(1,student.getId());
+            statement.setString(2,student.getFaculty());
+            statement.execute();
+        }
+
+
+        //TODO: finish return values.
+        catch (SQLException e) {e.printStackTrace(); }
+
+
         return null;
 
     }
