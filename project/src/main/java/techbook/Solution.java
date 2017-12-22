@@ -2,8 +2,6 @@ package techbook;
 
 import techbook.business.*;
 import techbook.data.DBConnector;
-import techbook.data.PostgreSQLErrorCodes;
-import techbook.data.QuerieStrings;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
