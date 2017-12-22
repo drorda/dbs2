@@ -67,14 +67,14 @@ public class Solution {
                 statement = connection.prepareStatement(
                         "CREATE TABLE Posts("
                                 +"PostID INTEGER,"
-                                +"AuthorID INTEGER,"
+                                +"StudentID INTEGER,"
                                 +"GroupID INTEGER,"
                                 +"Text TEXT NOT NULL,"
                                 +"Date DATE NOT NULL,"
 
                                 +"PRIMARY KEY (PostID),"
                                 +"CHECK (PostID > 0),"
-                                +"FOREIGN KEY (AuthorID) REFERENCES Students(StudentID) ON DELETE CASCADE,"
+                                +"FOREIGN KEY (StudentID) REFERENCES Students(StudentID) ON DELETE CASCADE,"
                                 +"FOREIGN KEY (GroupID) REFERENCES Groups(GroupID) ON DELETE CASCADE"
                                 +")");
                 statement.execute();
@@ -100,13 +100,13 @@ public class Solution {
             {
                 statement = connection.prepareStatement(
                         "CREATE TABLE Friends("
-                                +"StudentA INTEGER,"
-                                +"StudentB INTEGER,"
+                                +"StudentID_A INTEGER,"
+                                +"StudentID_B INTEGER,"
 
-                                +"PRIMARY KEY (StudentA, StudentB),"
-                                +"CHECK (StudentA != StudentB),"
-                                +"FOREIGN KEY (StudentA) REFERENCES Students(StudentID) ON DELETE CASCADE,"
-                                +"FOREIGN KEY (StudentB) REFERENCES Students(StudentID) ON DELETE CASCADE"
+                                +"PRIMARY KEY (StudentID_A, StudentID_B),"
+                                +"CHECK (StudentID_A != StudentID_B),"
+                                +"FOREIGN KEY (StudentID_A) REFERENCES Students(StudentID) ON DELETE CASCADE,"
+                                +"FOREIGN KEY (StudentID_B) REFERENCES Students(StudentID) ON DELETE CASCADE"
                                 +")");
                 statement.execute();
             }
