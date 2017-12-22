@@ -241,7 +241,9 @@ public class Solution {
         try
         {
             //add to students
-            statement = connection.prepareStatement("INSERT INTO Students VALUES (?, ?, ?)");
+            statement = connection.prepareStatement(
+                    "INSERT INTO Students"
+                        + " VALUES (?, ?, ?)");
             statement.setInt(1, student.getId());
             statement.setString(2, student.getName());
             statement.setString(3, student.getFaculty());
@@ -249,7 +251,9 @@ public class Solution {
 
             //add to faculty group
             //TODO: check architecture of Groups
-            statement = connection.prepareStatement("INSERT INTO Groups VALUE (?, ?)");
+            statement = connection.prepareStatement(
+                    "INSERT INTO Groups" +
+                            " VALUE (?, ?)");
             statement.setInt(1,student.getId());
             statement.setString(2,student.getFaculty());
             statement.execute();
@@ -260,7 +264,7 @@ public class Solution {
         catch (SQLException e) {e.printStackTrace(); }
 
 
-        return null;
+
 
     }
 
@@ -292,8 +296,31 @@ public class Solution {
 
     public static Student getStudentProfile(Integer studentId)
     {
-        
-        return null;
+        if(!(studentId>0))
+            return Student.badStudent();
+
+        Connection connection = DBConnector.getConnection();
+
+        try
+        {
+
+            PreparedStatement statement = connection.prepareStatement(
+                    "SELECT * FROM Students "
+                            + "WHERE StudentId = ?");
+            statement.setInt(1,studentId);
+
+            ResultSet res = statement.executeQuery();
+            Student ret_val = Student.badStudent();
+            if(res.next() == true){
+                ret_val.setId(studentId);
+                ret_val.setName(res.getString(2));
+                ret_val.setFaculty(res.getString(3));
+            }
+
+            return ret_val;
+        }
+
+        catch (SQLException e) {return Student.badStudent();}
     }
 
 

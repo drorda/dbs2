@@ -19,40 +19,41 @@
       <file leaf-file-name="Solution.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/techbook/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="999">
-              <caret line="254" column="32" lean-forward="true" selection-start-line="254" selection-start-column="32" selection-end-line="254" selection-end-column="32" />
+            <state relative-caret-position="136">
+              <caret line="301" column="60" lean-forward="false" selection-start-line="301" selection-start-column="60" selection-end-line="301" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#clearTables#0;class#Solution#0" expanded="false" />
                 <element signature="method#dropTables#0;class#Solution#0" expanded="false" />
-                <element signature="method#deleteStudent#0;class#Solution#0" expanded="false" />
-                <element signature="method#getStudentProfile#0;class#Solution#0" expanded="false" />
                 <element signature="method#updateStudentFaculty#0;class#Solution#0" expanded="false" />
                 <element signature="method#addPost#0;class#Solution#0" expanded="false" />
-                <marker date="1513982988636" expanded="true" signature="660:1020" ph="CREATE TABLE... Students" />
-                <marker date="1513982988636" expanded="true" signature="1246:1526" ph="CREATE TABLE... Groups" />
-                <marker date="1513982988636" expanded="true" signature="1752:2205" ph="CREATE TABLE... GroupMembership" />
-                <marker date="1513982988636" expanded="true" signature="2431:2501" ph="CREATE TABLE... Posts" />
-                <marker date="1513982988636" expanded="true" signature="2431:3078" ph="CREATE TABLE... Posts" />
-                <marker date="1513982988636" expanded="true" signature="3304:3742" ph="CREATE TABLE... Likes" />
-                <marker date="1513982988636" expanded="true" signature="3968:4506" ph="CREATE TABLE... Friends" />
-                <marker date="1513982988636" expanded="true" signature="4895:4914" ph="DELETE FROM " />
-                <marker date="1513982988636" expanded="true" signature="5091:5108" ph="DELETE FROM " />
-                <marker date="1513982988636" expanded="true" signature="5285:5302" ph="DELETE FROM " />
-                <marker date="1513982988636" expanded="true" signature="5479:5506" ph="DELETE FROM " />
-                <marker date="1513982988636" expanded="true" signature="5683:5701" ph="DELETE FROM " />
-                <marker date="1513982988636" expanded="true" signature="5878:5898" ph="DELETE FROM " />
-                <marker date="1513982988636" expanded="true" signature="6278:6296" ph="DROP TABLE F... " />
-                <marker date="1513982988636" expanded="true" signature="6473:6489" ph="DROP TABLE L... " />
-                <marker date="1513982988636" expanded="true" signature="6666:6682" ph="DROP TABLE P... " />
-                <marker date="1513982988636" expanded="true" signature="6859:6885" ph="DROP TABLE G... " />
-                <marker date="1513982988636" expanded="true" signature="7062:7079" ph="DROP TABLE G... " />
-                <marker date="1513982988636" expanded="true" signature="7256:7275" ph="DROP TABLE S... " />
-                <marker date="1513982988636" expanded="true" signature="8091:8111" ph="INSERT INTO Students... " />
-                <marker date="1513982988636" expanded="true" signature="8091:8128" ph="INSERT INTO Students... " />
-                <marker date="1513982988636" expanded="true" signature="8466:8481" ph="INSERT INTO Grops... " />
-                <marker date="1513982988636" expanded="true" signature="8466:8496" ph="INSERT INTO Groups... " />
-                <marker date="1513982988636" expanded="true" signature="8466:8497" ph="INSERT INTO Groups... " />
+                <marker date="1513984299749" expanded="true" signature="660:1020" ph="CREATE TABLE... Students" />
+                <marker date="1513984299749" expanded="true" signature="1246:1526" ph="CREATE TABLE... Groups" />
+                <marker date="1513984299749" expanded="true" signature="1752:2205" ph="CREATE TABLE... GroupMembership" />
+                <marker date="1513984299749" expanded="true" signature="2431:2501" ph="CREATE TABLE... Posts" />
+                <marker date="1513984299749" expanded="true" signature="2431:3078" ph="CREATE TABLE... Posts" />
+                <marker date="1513984299749" expanded="true" signature="3304:3742" ph="CREATE TABLE... Likes" />
+                <marker date="1513984299749" expanded="true" signature="3968:4506" ph="CREATE TABLE... Friends" />
+                <marker date="1513984299749" expanded="true" signature="4895:4914" ph="DELETE FROM " />
+                <marker date="1513984299749" expanded="true" signature="5091:5108" ph="DELETE FROM " />
+                <marker date="1513984299749" expanded="true" signature="5285:5302" ph="DELETE FROM " />
+                <marker date="1513984299749" expanded="true" signature="5479:5506" ph="DELETE FROM " />
+                <marker date="1513984299749" expanded="true" signature="5683:5701" ph="DELETE FROM " />
+                <marker date="1513984299749" expanded="true" signature="5878:5898" ph="DELETE FROM " />
+                <marker date="1513984299749" expanded="true" signature="6278:6296" ph="DROP TABLE F... " />
+                <marker date="1513984299749" expanded="true" signature="6473:6489" ph="DROP TABLE L... " />
+                <marker date="1513984299749" expanded="true" signature="6666:6682" ph="DROP TABLE P... " />
+                <marker date="1513984299749" expanded="true" signature="6859:6885" ph="DROP TABLE G... " />
+                <marker date="1513984299749" expanded="true" signature="7062:7079" ph="DROP TABLE G... " />
+                <marker date="1513984299749" expanded="true" signature="7256:7275" ph="DROP TABLE S... " />
+                <marker date="1513984299749" expanded="true" signature="8112:8132" ph="INSERT INTO Students... " />
+                <marker date="1513984299749" expanded="true" signature="8112:8178" ph="INSERT INTO Students... " />
+                <marker date="1513984299749" expanded="true" signature="8537:8552" ph="INSERT INTO Grops... " />
+                <marker date="1513984299749" expanded="true" signature="8537:8555" ph="INSERT INTO Groups... " />
+                <marker date="1513984299749" expanded="true" signature="8537:8600" ph="INSERT INTO Groups... " />
+                <marker date="1513984299749" expanded="true" signature="8537:8601" ph="INSERT INTO Groups... " />
+                <marker date="1513984299749" expanded="true" signature="9827:9849" ph="SELECT * FRO... Students" />
+                <marker date="1513984299749" expanded="true" signature="9827:9902" ph="SELECT * FRO... Students" />
               </folding>
             </state>
           </provider>
@@ -943,7 +944,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1511771101010</updated>
-      <workItem from="1513966038682" duration="10432000" />
+      <workItem from="1513966038682" duration="11733000" />
     </task>
     <task id="LOCAL-00001" summary="Simple Test Done">
       <created>1511916482707</created>
@@ -1037,7 +1038,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10432000" />
+    <option name="totallyTimeSpent" value="11733000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
@@ -1102,7 +1103,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/techbook/Solution.java</url>
-          <line>433</line>
+          <line>460</line>
           <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
@@ -1416,14 +1417,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/techbook/business/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/techbook/data/QuerieStrings.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -1432,42 +1425,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/techbook/business/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/techbook/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="999">
-          <caret line="254" column="32" lean-forward="true" selection-start-line="254" selection-start-column="32" selection-end-line="254" selection-end-column="32" />
+        <state relative-caret-position="136">
+          <caret line="301" column="60" lean-forward="false" selection-start-line="301" selection-start-column="60" selection-end-line="301" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#clearTables#0;class#Solution#0" expanded="false" />
             <element signature="method#dropTables#0;class#Solution#0" expanded="false" />
-            <element signature="method#deleteStudent#0;class#Solution#0" expanded="false" />
-            <element signature="method#getStudentProfile#0;class#Solution#0" expanded="false" />
             <element signature="method#updateStudentFaculty#0;class#Solution#0" expanded="false" />
             <element signature="method#addPost#0;class#Solution#0" expanded="false" />
-            <marker date="1513982988636" expanded="true" signature="660:1020" ph="CREATE TABLE... Students" />
-            <marker date="1513982988636" expanded="true" signature="1246:1526" ph="CREATE TABLE... Groups" />
-            <marker date="1513982988636" expanded="true" signature="1752:2205" ph="CREATE TABLE... GroupMembership" />
-            <marker date="1513982988636" expanded="true" signature="2431:2501" ph="CREATE TABLE... Posts" />
-            <marker date="1513982988636" expanded="true" signature="2431:3078" ph="CREATE TABLE... Posts" />
-            <marker date="1513982988636" expanded="true" signature="3304:3742" ph="CREATE TABLE... Likes" />
-            <marker date="1513982988636" expanded="true" signature="3968:4506" ph="CREATE TABLE... Friends" />
-            <marker date="1513982988636" expanded="true" signature="4895:4914" ph="DELETE FROM " />
-            <marker date="1513982988636" expanded="true" signature="5091:5108" ph="DELETE FROM " />
-            <marker date="1513982988636" expanded="true" signature="5285:5302" ph="DELETE FROM " />
-            <marker date="1513982988636" expanded="true" signature="5479:5506" ph="DELETE FROM " />
-            <marker date="1513982988636" expanded="true" signature="5683:5701" ph="DELETE FROM " />
-            <marker date="1513982988636" expanded="true" signature="5878:5898" ph="DELETE FROM " />
-            <marker date="1513982988636" expanded="true" signature="6278:6296" ph="DROP TABLE F... " />
-            <marker date="1513982988636" expanded="true" signature="6473:6489" ph="DROP TABLE L... " />
-            <marker date="1513982988636" expanded="true" signature="6666:6682" ph="DROP TABLE P... " />
-            <marker date="1513982988636" expanded="true" signature="6859:6885" ph="DROP TABLE G... " />
-            <marker date="1513982988636" expanded="true" signature="7062:7079" ph="DROP TABLE G... " />
-            <marker date="1513982988636" expanded="true" signature="7256:7275" ph="DROP TABLE S... " />
-            <marker date="1513982988636" expanded="true" signature="8091:8111" ph="INSERT INTO Students... " />
-            <marker date="1513982988636" expanded="true" signature="8091:8128" ph="INSERT INTO Students... " />
-            <marker date="1513982988636" expanded="true" signature="8466:8481" ph="INSERT INTO Grops... " />
-            <marker date="1513982988636" expanded="true" signature="8466:8496" ph="INSERT INTO Groups... " />
-            <marker date="1513982988636" expanded="true" signature="8466:8497" ph="INSERT INTO Groups... " />
+            <marker date="1513984299749" expanded="true" signature="660:1020" ph="CREATE TABLE... Students" />
+            <marker date="1513984299749" expanded="true" signature="1246:1526" ph="CREATE TABLE... Groups" />
+            <marker date="1513984299749" expanded="true" signature="1752:2205" ph="CREATE TABLE... GroupMembership" />
+            <marker date="1513984299749" expanded="true" signature="2431:2501" ph="CREATE TABLE... Posts" />
+            <marker date="1513984299749" expanded="true" signature="2431:3078" ph="CREATE TABLE... Posts" />
+            <marker date="1513984299749" expanded="true" signature="3304:3742" ph="CREATE TABLE... Likes" />
+            <marker date="1513984299749" expanded="true" signature="3968:4506" ph="CREATE TABLE... Friends" />
+            <marker date="1513984299749" expanded="true" signature="4895:4914" ph="DELETE FROM " />
+            <marker date="1513984299749" expanded="true" signature="5091:5108" ph="DELETE FROM " />
+            <marker date="1513984299749" expanded="true" signature="5285:5302" ph="DELETE FROM " />
+            <marker date="1513984299749" expanded="true" signature="5479:5506" ph="DELETE FROM " />
+            <marker date="1513984299749" expanded="true" signature="5683:5701" ph="DELETE FROM " />
+            <marker date="1513984299749" expanded="true" signature="5878:5898" ph="DELETE FROM " />
+            <marker date="1513984299749" expanded="true" signature="6278:6296" ph="DROP TABLE F... " />
+            <marker date="1513984299749" expanded="true" signature="6473:6489" ph="DROP TABLE L... " />
+            <marker date="1513984299749" expanded="true" signature="6666:6682" ph="DROP TABLE P... " />
+            <marker date="1513984299749" expanded="true" signature="6859:6885" ph="DROP TABLE G... " />
+            <marker date="1513984299749" expanded="true" signature="7062:7079" ph="DROP TABLE G... " />
+            <marker date="1513984299749" expanded="true" signature="7256:7275" ph="DROP TABLE S... " />
+            <marker date="1513984299749" expanded="true" signature="8112:8132" ph="INSERT INTO Students... " />
+            <marker date="1513984299749" expanded="true" signature="8112:8178" ph="INSERT INTO Students... " />
+            <marker date="1513984299749" expanded="true" signature="8537:8552" ph="INSERT INTO Grops... " />
+            <marker date="1513984299749" expanded="true" signature="8537:8555" ph="INSERT INTO Groups... " />
+            <marker date="1513984299749" expanded="true" signature="8537:8600" ph="INSERT INTO Groups... " />
+            <marker date="1513984299749" expanded="true" signature="8537:8601" ph="INSERT INTO Groups... " />
+            <marker date="1513984299749" expanded="true" signature="9827:9849" ph="SELECT * FRO... Students" />
+            <marker date="1513984299749" expanded="true" signature="9827:9902" ph="SELECT * FRO... Students" />
           </folding>
         </state>
       </provider>
