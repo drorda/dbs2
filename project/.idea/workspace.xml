@@ -16,45 +16,82 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="Solution.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Solution.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/techbook/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="837">
-              <caret line="266" column="4" lean-forward="false" selection-start-line="266" selection-start-column="4" selection-end-line="266" selection-end-column="4" />
+            <state relative-caret-position="-6330">
+              <caret line="296" column="8" lean-forward="false" selection-start-line="296" selection-start-column="8" selection-end-line="296" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#clearTables#0;class#Solution#0" expanded="false" />
                 <element signature="method#dropTables#0;class#Solution#0" expanded="false" />
                 <element signature="method#updateStudentFaculty#0;class#Solution#0" expanded="false" />
                 <element signature="method#addPost#0;class#Solution#0" expanded="false" />
-                <marker date="1513984422455" expanded="true" signature="581:941" ph="CREATE TABLE... Students" />
-                <marker date="1513984422455" expanded="true" signature="1167:1447" ph="CREATE TABLE... Groups" />
-                <marker date="1513984422455" expanded="true" signature="1673:2126" ph="CREATE TABLE... GroupMembership" />
-                <marker date="1513984422455" expanded="true" signature="2352:2422" ph="CREATE TABLE... Posts" />
-                <marker date="1513984422455" expanded="true" signature="2352:2999" ph="CREATE TABLE... Posts" />
-                <marker date="1513984422455" expanded="true" signature="3225:3663" ph="CREATE TABLE... Likes" />
-                <marker date="1513984422455" expanded="true" signature="3889:4427" ph="CREATE TABLE... Friends" />
-                <marker date="1513984422455" expanded="true" signature="4816:4835" ph="DELETE FROM " />
-                <marker date="1513984422455" expanded="true" signature="5012:5029" ph="DELETE FROM " />
-                <marker date="1513984422455" expanded="true" signature="5206:5223" ph="DELETE FROM " />
-                <marker date="1513984422455" expanded="true" signature="5400:5427" ph="DELETE FROM " />
-                <marker date="1513984422455" expanded="true" signature="5604:5622" ph="DELETE FROM " />
-                <marker date="1513984422455" expanded="true" signature="5799:5819" ph="DELETE FROM " />
-                <marker date="1513984422455" expanded="true" signature="6199:6217" ph="DROP TABLE F... " />
-                <marker date="1513984422455" expanded="true" signature="6394:6410" ph="DROP TABLE L... " />
-                <marker date="1513984422455" expanded="true" signature="6587:6603" ph="DROP TABLE P... " />
-                <marker date="1513984422455" expanded="true" signature="6780:6806" ph="DROP TABLE G... " />
-                <marker date="1513984422455" expanded="true" signature="6983:7000" ph="DROP TABLE G... " />
-                <marker date="1513984422455" expanded="true" signature="7177:7196" ph="DROP TABLE S... " />
-                <marker date="1513984422455" expanded="true" signature="8033:8053" ph="INSERT INTO Students... " />
-                <marker date="1513984422455" expanded="true" signature="8033:8099" ph="INSERT INTO Students... " />
-                <marker date="1513984422455" expanded="true" signature="8458:8473" ph="INSERT INTO Grops... " />
-                <marker date="1513984422455" expanded="true" signature="8458:8476" ph="INSERT INTO Groups... " />
-                <marker date="1513984422455" expanded="true" signature="8458:8521" ph="INSERT INTO Groups... " />
-                <marker date="1513984422455" expanded="true" signature="8458:8522" ph="INSERT INTO Groups... " />
-                <marker date="1513984422455" expanded="true" signature="9748:9770" ph="SELECT * FRO... Students" />
-                <marker date="1513984422455" expanded="true" signature="9748:9823" ph="SELECT * FRO... Students" />
+                <marker date="1514039239900" expanded="true" signature="581:941" ph="CREATE TABLE... Students" />
+                <marker date="1514039239900" expanded="true" signature="1167:1471" ph="CREATE TABLE... Groups" />
+                <marker date="1514039239900" expanded="true" signature="1697:2150" ph="CREATE TABLE... GroupMembership" />
+                <marker date="1514039239900" expanded="true" signature="2376:2446" ph="CREATE TABLE... Posts" />
+                <marker date="1514039239900" expanded="true" signature="2376:3023" ph="CREATE TABLE... Posts" />
+                <marker date="1514039239900" expanded="true" signature="3249:3687" ph="CREATE TABLE... Likes" />
+                <marker date="1514039239900" expanded="true" signature="3913:4451" ph="CREATE TABLE... Friends" />
+                <marker date="1514039239900" expanded="true" signature="4840:4859" ph="DELETE FROM " />
+                <marker date="1514039239900" expanded="true" signature="5036:5053" ph="DELETE FROM " />
+                <marker date="1514039239900" expanded="true" signature="5230:5247" ph="DELETE FROM " />
+                <marker date="1514039239900" expanded="true" signature="5424:5451" ph="DELETE FROM " />
+                <marker date="1514039239900" expanded="true" signature="5628:5646" ph="DELETE FROM " />
+                <marker date="1514039239900" expanded="true" signature="5823:5843" ph="DELETE FROM " />
+                <marker date="1514039239900" expanded="true" signature="6223:6241" ph="DROP TABLE F... " />
+                <marker date="1514039239900" expanded="true" signature="6418:6434" ph="DROP TABLE L... " />
+                <marker date="1514039239900" expanded="true" signature="6611:6627" ph="DROP TABLE P... " />
+                <marker date="1514039239900" expanded="true" signature="6804:6830" ph="DROP TABLE G... " />
+                <marker date="1514039239900" expanded="true" signature="7007:7024" ph="DROP TABLE G... " />
+                <marker date="1514039239900" expanded="true" signature="7201:7220" ph="DROP TABLE S... " />
+                <marker date="1514039239900" expanded="true" signature="8057:8077" ph="INSERT INTO Students... " />
+                <marker date="1514039239900" expanded="true" signature="8057:8123" ph="INSERT INTO Students... " />
+                <marker date="1514039239900" expanded="true" signature="8433:8448" ph="SELECT COUNT... " />
+                <marker date="1514039239900" expanded="true" signature="8433:8489" ph="SELECT COUNT... Groups" />
+                <marker date="1514039239900" expanded="true" signature="8433:8530" ph="SELECT COUNT... Groups" />
+                <marker date="1514039239900" expanded="true" signature="8433:8531" ph="SELECT COUNT... Groups" />
+                <marker date="1514039239900" expanded="true" signature="8817:8844" ph="INSERT INTO GroupMembership... " />
+                <marker date="1514039239900" expanded="true" signature="8817:8889" ph="INSERT INTO GroupMembership... " />
+                <marker date="1514039239900" expanded="true" signature="9197:9215" ph="INSERT INTO Groups... " />
+                <marker date="1514039239900" expanded="true" signature="9197:9259" ph="INSERT INTO Groups... " />
+                <marker date="1514039239900" expanded="true" signature="9197:9288" ph="INSERT INTO Groups... " />
+                <marker date="1514039239900" expanded="true" signature="9429:9543" ph="SELECT COUNT... Groups" />
+                <marker date="1514039239900" expanded="true" signature="9799:9875" ph="INSERT INTO GroupMembership... " />
+                <marker date="1514039239900" expanded="true" signature="11133:11155" ph="SELECT * FRO... Students" />
+                <marker date="1514039239900" expanded="true" signature="11133:11208" ph="SELECT * FRO... Students" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SimpleTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/techbook/SimpleTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/techbook/AbstractTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UrielMendi_TestsPart1.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/techbook/UrielMendi_TestsPart1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="237">
+              <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -64,7 +101,13 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="700">
               <caret line="33" column="40" lean-forward="false" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#240#241#0" expanded="false" />
+                <element signature="e#273#274#0" expanded="false" />
+                <element signature="e#508#509#0" expanded="false" />
+                <element signature="e#541#542#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -89,11 +132,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Example.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Example.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/techbook/Example.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1637">
-              <caret line="18" column="19" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="19" />
+            <state relative-caret-position="-320">
+              <caret line="161" column="40" lean-forward="true" selection-start-line="161" selection-start-column="40" selection-end-line="161" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -104,11 +147,9 @@
       <file leaf-file-name="myTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/techbook/myTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+            <state relative-caret-position="100">
+              <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -132,6 +173,7 @@
       <find>moishe</find>
       <find>ReturnValue</find>
       <find>StudentBStudentID_B</find>
+      <find>createTable</find>
     </findStrings>
     <replaceStrings>
       <replace>student</replace>
@@ -300,66 +342,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="techbook" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="techbook" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="business" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="AndroidView" />
@@ -385,6 +367,9 @@
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ivanz\Desktop\Technion\winter 17-18\databases\hw2\236363_winter17-18_hw2\dbs2\project\src\test\java\techbook" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -750,6 +735,7 @@
       <setting name="passParentEnv" value="true" />
       <setting name="launchBrowser" value="true" />
       <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -874,6 +860,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -934,7 +926,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1511771101010</updated>
-      <workItem from="1513966038682" duration="11859000" />
+      <workItem from="1513966038682" duration="12123000" />
+      <workItem from="1514036410686" duration="3531000" />
     </task>
     <task id="LOCAL-00001" summary="Simple Test Done">
       <created>1511916482707</created>
@@ -1028,7 +1021,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11859000" />
+    <option name="totallyTimeSpent" value="15654000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
@@ -1036,21 +1029,21 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33402705" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1069397" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36632538" sideWeight="0.50416666" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1069397" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36632538" sideWeight="0.49583334" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32968178" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1953125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1093,7 +1086,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/techbook/Solution.java</url>
-          <line>458</line>
+          <line>490</line>
           <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
@@ -1113,13 +1106,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/techbook/business/Feed.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="43" lean-forward="false" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/techbook/business/Post.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -1321,34 +1307,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/techbook/AbstractTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/techbook/myTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/techbook/SimpleTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
@@ -1357,21 +1315,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/techbook/Example.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1637">
-          <caret line="18" column="19" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/techbook/business/StudentIdPair.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="700">
           <caret line="33" column="40" lean-forward="false" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#240#241#0" expanded="false" />
+            <element signature="e#273#274#0" expanded="false" />
+            <element signature="e#508#509#0" expanded="false" />
+            <element signature="e#541#542#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1400,21 +1354,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="18" column="9" lean-forward="false" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
-          <folding>
-            <element signature="e#352#353#0" expanded="false" />
-            <element signature="e#392#393#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/techbook/data/QuerieStrings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="30" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/techbook/data/QuerieStrings.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/techbook/business/Student.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -1423,43 +1366,92 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/techbook/UrielMendi_TestsPart1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/techbook/AbstractTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/techbook/myTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/techbook/SimpleTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/techbook/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="837">
-          <caret line="266" column="4" lean-forward="false" selection-start-line="266" selection-start-column="4" selection-end-line="266" selection-end-column="4" />
+        <state relative-caret-position="-6330">
+          <caret line="296" column="8" lean-forward="false" selection-start-line="296" selection-start-column="8" selection-end-line="296" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#clearTables#0;class#Solution#0" expanded="false" />
             <element signature="method#dropTables#0;class#Solution#0" expanded="false" />
             <element signature="method#updateStudentFaculty#0;class#Solution#0" expanded="false" />
             <element signature="method#addPost#0;class#Solution#0" expanded="false" />
-            <marker date="1513984422455" expanded="true" signature="581:941" ph="CREATE TABLE... Students" />
-            <marker date="1513984422455" expanded="true" signature="1167:1447" ph="CREATE TABLE... Groups" />
-            <marker date="1513984422455" expanded="true" signature="1673:2126" ph="CREATE TABLE... GroupMembership" />
-            <marker date="1513984422455" expanded="true" signature="2352:2422" ph="CREATE TABLE... Posts" />
-            <marker date="1513984422455" expanded="true" signature="2352:2999" ph="CREATE TABLE... Posts" />
-            <marker date="1513984422455" expanded="true" signature="3225:3663" ph="CREATE TABLE... Likes" />
-            <marker date="1513984422455" expanded="true" signature="3889:4427" ph="CREATE TABLE... Friends" />
-            <marker date="1513984422455" expanded="true" signature="4816:4835" ph="DELETE FROM " />
-            <marker date="1513984422455" expanded="true" signature="5012:5029" ph="DELETE FROM " />
-            <marker date="1513984422455" expanded="true" signature="5206:5223" ph="DELETE FROM " />
-            <marker date="1513984422455" expanded="true" signature="5400:5427" ph="DELETE FROM " />
-            <marker date="1513984422455" expanded="true" signature="5604:5622" ph="DELETE FROM " />
-            <marker date="1513984422455" expanded="true" signature="5799:5819" ph="DELETE FROM " />
-            <marker date="1513984422455" expanded="true" signature="6199:6217" ph="DROP TABLE F... " />
-            <marker date="1513984422455" expanded="true" signature="6394:6410" ph="DROP TABLE L... " />
-            <marker date="1513984422455" expanded="true" signature="6587:6603" ph="DROP TABLE P... " />
-            <marker date="1513984422455" expanded="true" signature="6780:6806" ph="DROP TABLE G... " />
-            <marker date="1513984422455" expanded="true" signature="6983:7000" ph="DROP TABLE G... " />
-            <marker date="1513984422455" expanded="true" signature="7177:7196" ph="DROP TABLE S... " />
-            <marker date="1513984422455" expanded="true" signature="8033:8053" ph="INSERT INTO Students... " />
-            <marker date="1513984422455" expanded="true" signature="8033:8099" ph="INSERT INTO Students... " />
-            <marker date="1513984422455" expanded="true" signature="8458:8473" ph="INSERT INTO Grops... " />
-            <marker date="1513984422455" expanded="true" signature="8458:8476" ph="INSERT INTO Groups... " />
-            <marker date="1513984422455" expanded="true" signature="8458:8521" ph="INSERT INTO Groups... " />
-            <marker date="1513984422455" expanded="true" signature="8458:8522" ph="INSERT INTO Groups... " />
-            <marker date="1513984422455" expanded="true" signature="9748:9770" ph="SELECT * FRO... Students" />
-            <marker date="1513984422455" expanded="true" signature="9748:9823" ph="SELECT * FRO... Students" />
+            <marker date="1514039239900" expanded="true" signature="581:941" ph="CREATE TABLE... Students" />
+            <marker date="1514039239900" expanded="true" signature="1167:1471" ph="CREATE TABLE... Groups" />
+            <marker date="1514039239900" expanded="true" signature="1697:2150" ph="CREATE TABLE... GroupMembership" />
+            <marker date="1514039239900" expanded="true" signature="2376:2446" ph="CREATE TABLE... Posts" />
+            <marker date="1514039239900" expanded="true" signature="2376:3023" ph="CREATE TABLE... Posts" />
+            <marker date="1514039239900" expanded="true" signature="3249:3687" ph="CREATE TABLE... Likes" />
+            <marker date="1514039239900" expanded="true" signature="3913:4451" ph="CREATE TABLE... Friends" />
+            <marker date="1514039239900" expanded="true" signature="4840:4859" ph="DELETE FROM " />
+            <marker date="1514039239900" expanded="true" signature="5036:5053" ph="DELETE FROM " />
+            <marker date="1514039239900" expanded="true" signature="5230:5247" ph="DELETE FROM " />
+            <marker date="1514039239900" expanded="true" signature="5424:5451" ph="DELETE FROM " />
+            <marker date="1514039239900" expanded="true" signature="5628:5646" ph="DELETE FROM " />
+            <marker date="1514039239900" expanded="true" signature="5823:5843" ph="DELETE FROM " />
+            <marker date="1514039239900" expanded="true" signature="6223:6241" ph="DROP TABLE F... " />
+            <marker date="1514039239900" expanded="true" signature="6418:6434" ph="DROP TABLE L... " />
+            <marker date="1514039239900" expanded="true" signature="6611:6627" ph="DROP TABLE P... " />
+            <marker date="1514039239900" expanded="true" signature="6804:6830" ph="DROP TABLE G... " />
+            <marker date="1514039239900" expanded="true" signature="7007:7024" ph="DROP TABLE G... " />
+            <marker date="1514039239900" expanded="true" signature="7201:7220" ph="DROP TABLE S... " />
+            <marker date="1514039239900" expanded="true" signature="8057:8077" ph="INSERT INTO Students... " />
+            <marker date="1514039239900" expanded="true" signature="8057:8123" ph="INSERT INTO Students... " />
+            <marker date="1514039239900" expanded="true" signature="8433:8448" ph="SELECT COUNT... " />
+            <marker date="1514039239900" expanded="true" signature="8433:8489" ph="SELECT COUNT... Groups" />
+            <marker date="1514039239900" expanded="true" signature="8433:8530" ph="SELECT COUNT... Groups" />
+            <marker date="1514039239900" expanded="true" signature="8433:8531" ph="SELECT COUNT... Groups" />
+            <marker date="1514039239900" expanded="true" signature="8817:8844" ph="INSERT INTO GroupMembership... " />
+            <marker date="1514039239900" expanded="true" signature="8817:8889" ph="INSERT INTO GroupMembership... " />
+            <marker date="1514039239900" expanded="true" signature="9197:9215" ph="INSERT INTO Groups... " />
+            <marker date="1514039239900" expanded="true" signature="9197:9259" ph="INSERT INTO Groups... " />
+            <marker date="1514039239900" expanded="true" signature="9197:9288" ph="INSERT INTO Groups... " />
+            <marker date="1514039239900" expanded="true" signature="9429:9543" ph="SELECT COUNT... Groups" />
+            <marker date="1514039239900" expanded="true" signature="9799:9875" ph="INSERT INTO GroupMembership... " />
+            <marker date="1514039239900" expanded="true" signature="11133:11155" ph="SELECT * FRO... Students" />
+            <marker date="1514039239900" expanded="true" signature="11133:11208" ph="SELECT * FRO... Students" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/techbook/Example.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-320">
+          <caret line="161" column="40" lean-forward="true" selection-start-line="161" selection-start-column="40" selection-end-line="161" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -36,7 +36,7 @@ public class Solution {
             {
                 statement = connection.prepareStatement(
                         "CREATE TABLE Groups("
-                                +"GroupID INTEGER,"
+                                +"GroupID INTEGER NOT NULL AUTO_INCREMENT,"
                                 +"Name VARCHAR(100) NOT NULL,"
 
                                 +"PRIMARY KEY (GroupID),"
@@ -248,21 +248,53 @@ public class Solution {
             statement.execute();
 
             //add to faculty group
-            //TODO: check architecture of Groups
             statement = connection.prepareStatement(
-                    "INSERT INTO Groups" +
-                            " VALUE (?, ?)");
-            statement.setInt(1,student.getId());
-            statement.setString(2,student.getFaculty());
-            statement.execute();
+                    "SELECT COUNT(1)"
+                        + " FROM Groups"
+                        + " WHERE KEY = " + student.getFaculty());
+            ResultSet res = statement.executeQuery();
+
+            //if group exists - join
+            if(res.next() == true){
+                Integer groupId = res.getInt(1);
+                statement = connection.prepareStatement(
+                        "INSERT INTO GroupMembership"
+                            + " VALUE (?,?)");
+                statement.setInt(1, student.getId());
+                statement.setInt(2, groupId);
+                statement.execute();
+            }
+
+            //group doesn't exist - create and join
+            else{
+                statement = connection.prepareStatement(
+                        "INSERT INTO Groups (Name)"
+                        + " VALUE (" + student.getFaculty() + ")"
+                );
+                statement.execute();
+
+                statement = connection.prepareStatement(
+                        "SELECT COUNT(1)"
+                                + " FROM Groups"
+                                + " WHERE KEY = " + student.getFaculty());
+                ResultSet res_tmp = statement.executeQuery();
+                res_tmp.next();
+                Integer groupId = res_tmp.getInt(1);
+                statement = connection.prepareStatement(
+                        "INSERT INTO GroupMembership"
+                                + " VALUE (?,?)");
+                statement.setInt(1, student.getId());
+                statement.setInt(2, groupId);
+                statement.execute();
+            }
+
+
         }
 
 
         //TODO: finish return values.
         catch (SQLException e) {e.printStackTrace(); }
-
-
-
+        return null;
 
     }
 
