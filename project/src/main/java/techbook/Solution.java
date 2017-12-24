@@ -14,7 +14,7 @@ import static techbook.business.ReturnValue.*;
 public class Solution {
 
     private static Integer groupID;
-    
+
 
     public static void createTables()
     {
@@ -252,44 +252,10 @@ public class Solution {
 
             //add to faculty group
             statement = connection.prepareStatement(
-                    "SELECT COUNT(1)"
-                        + " FROM Groups"
-                        + " WHERE KEY = " + student.getFaculty());
-            ResultSet res = statement.executeQuery();
-
-            //if group exists - join
-            if(res.next() == true){
-                Integer groupId = res.getInt(1);
-                statement = connection.prepareStatement(
-                        "INSERT INTO GroupMembership"
-                            + " VALUE (?,?)");
-                statement.setInt(1, student.getId());
-                statement.setInt(2, groupId);
-                statement.execute();
-            }
-
-            //group doesn't exist - create and join
-            else{
-                statement = connection.prepareStatement(
-                        "INSERT INTO Groups (Name)"
-                        + " VALUE (" + student.getFaculty() + ")"
-                );
-                statement.execute();
-
-                statement = connection.prepareStatement(
-                        "SELECT COUNT(1)"
-                                + " FROM Groups"
-                                + " WHERE KEY = " + student.getFaculty());
-                ResultSet res_tmp = statement.executeQuery();
-                res_tmp.next();
-                Integer groupId = res_tmp.getInt(1);
-                statement = connection.prepareStatement(
-                        "INSERT INTO GroupMembership"
-                                + " VALUE (?,?)");
-                statement.setInt(1, student.getId());
-                statement.setInt(2, groupId);
-                statement.execute();
-            }
+                    "INSERT INTO GroupMembership"
+                        + " VALUES (?, ?)");
+            statement.setInt(1,student.getId());
+            statement.setString(2,student.getFaculty());
 
 
         }
@@ -297,6 +263,19 @@ public class Solution {
 
         //TODO: finish return values.
         catch (SQLException e) {e.printStackTrace(); }
+
+        finally {
+            try {
+                statement.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+            try {
+                connection.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
         return null;
 
     }
