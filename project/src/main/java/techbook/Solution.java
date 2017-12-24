@@ -2,7 +2,6 @@ package techbook;
 
 import techbook.business.*;
 import techbook.data.DBConnector;
-import techbook.data.PostgreSQLErrorCodes;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -37,7 +36,7 @@ public class Solution {
             {
                 statement = connection.prepareStatement(
                         "CREATE TABLE Groups("
-                                +"GroupID INTEGER,"
+                                +"GroupID INTEGER NOT NULL AUTO_INCREMENT,"
                                 +"Name VARCHAR(100) NOT NULL,"
 
                                 +"PRIMARY KEY (GroupID),"
@@ -67,14 +66,14 @@ public class Solution {
                 statement = connection.prepareStatement(
                         "CREATE TABLE Posts("
                                 +"PostID INTEGER,"
-                                +"AuthorID INTEGER,"
+                                +"StudentID INTEGER,"
                                 +"GroupID INTEGER,"
                                 +"Text TEXT NOT NULL,"
                                 +"Date DATE NOT NULL,"
 
                                 +"PRIMARY KEY (PostID),"
                                 +"CHECK (PostID > 0),"
-                                +"FOREIGN KEY (AuthorID) REFERENCES Students(StudentID) ON DELETE CASCADE,"
+                                +"FOREIGN KEY (StudentID) REFERENCES Students(StudentID) ON DELETE CASCADE,"
                                 +"FOREIGN KEY (GroupID) REFERENCES Groups(GroupID) ON DELETE CASCADE"
                                 +")");
                 statement.execute();
@@ -100,13 +99,13 @@ public class Solution {
             {
                 statement = connection.prepareStatement(
                         "CREATE TABLE Friends("
-                                +"StudentA INTEGER,"
-                                +"StudentB INTEGER,"
+                                +"StudentID_A INTEGER,"
+                                +"StudentID_B INTEGER,"
 
-                                +"PRIMARY KEY (StudentA, StudentB),"
-                                +"CHECK (StudentA != StudentB),"
-                                +"FOREIGN KEY (StudentA) REFERENCES Students(StudentID) ON DELETE CASCADE,"
-                                +"FOREIGN KEY (StudentB) REFERENCES Students(StudentID) ON DELETE CASCADE"
+                                +"PRIMARY KEY (StudentID_A, StudentID_B),"
+                                +"CHECK (StudentID_A != StudentID_B),"
+                                +"FOREIGN KEY (StudentID_A) REFERENCES Students(StudentID) ON DELETE CASCADE,"
+                                +"FOREIGN KEY (StudentID_B) REFERENCES Students(StudentID) ON DELETE CASCADE"
                                 +")");
                 statement.execute();
             }
@@ -231,7 +230,70 @@ public class Solution {
      */
     public static ReturnValue addStudent(Student student)
     {
-        
+        if(!(student instanceof Student))
+            return BAD_PARAMS;
+
+        Connection connection = DBConnector.getConnection();
+        PreparedStatement statement = null;
+
+        try
+        {
+            //add to students
+            statement = connection.prepareStatement(
+                    "INSERT INTO Students"
+                        + " VALUES (?, ?, ?)");
+            statement.setInt(1, student.getId());
+            statement.setString(2, student.getName());
+            statement.setString(3, student.getFaculty());
+            statement.execute();
+
+            //add to faculty group
+            statement = connection.prepareStatement(
+                    "SELECT COUNT(1)"
+                        + " FROM Groups"
+                        + " WHERE KEY = " + student.getFaculty());
+            ResultSet res = statement.executeQuery();
+
+            //if group exists - join
+            if(res.next() == true){
+                Integer groupId = res.getInt(1);
+                statement = connection.prepareStatement(
+                        "INSERT INTO GroupMembership"
+                            + " VALUE (?,?)");
+                statement.setInt(1, student.getId());
+                statement.setInt(2, groupId);
+                statement.execute();
+            }
+
+            //group doesn't exist - create and join
+            else{
+                statement = connection.prepareStatement(
+                        "INSERT INTO Groups (Name)"
+                        + " VALUE (" + student.getFaculty() + ")"
+                );
+                statement.execute();
+
+                statement = connection.prepareStatement(
+                        "SELECT COUNT(1)"
+                                + " FROM Groups"
+                                + " WHERE KEY = " + student.getFaculty());
+                ResultSet res_tmp = statement.executeQuery();
+                res_tmp.next();
+                Integer groupId = res_tmp.getInt(1);
+                statement = connection.prepareStatement(
+                        "INSERT INTO GroupMembership"
+                                + " VALUE (?,?)");
+                statement.setInt(1, student.getId());
+                statement.setInt(2, groupId);
+                statement.execute();
+            }
+
+
+        }
+
+
+        //TODO: finish return values.
+        catch (SQLException e) {e.printStackTrace(); }
         return null;
 
     }
@@ -264,8 +326,31 @@ public class Solution {
 
     public static Student getStudentProfile(Integer studentId)
     {
-        
-        return null;
+        if(!(studentId>0))
+            return Student.badStudent();
+
+        Connection connection = DBConnector.getConnection();
+
+        try
+        {
+
+            PreparedStatement statement = connection.prepareStatement(
+                    "SELECT * FROM Students "
+                            + "WHERE StudentId = ?");
+            statement.setInt(1,studentId);
+
+            ResultSet res = statement.executeQuery();
+            Student ret_val = Student.badStudent();
+            if(res.next() == true){
+                ret_val.setId(studentId);
+                ret_val.setName(res.getString(2));
+                ret_val.setFaculty(res.getString(3));
+            }
+
+            return ret_val;
+        }
+
+        catch (SQLException e) {return Student.badStudent();}
     }
 
 
