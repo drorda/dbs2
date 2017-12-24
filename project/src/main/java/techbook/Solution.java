@@ -13,8 +13,11 @@ import static techbook.business.ReturnValue.*;
 
 public class Solution {
 
-        public static void createTables()
-        {
+    private static Integer groupID;
+    
+
+    public static void createTables()
+    {
             Connection connection = DBConnector.getConnection();
             PreparedStatement statement = null;
             try
