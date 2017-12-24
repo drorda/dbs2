@@ -233,7 +233,9 @@ public class Solution {
 
 
         //TODO: finish return values.
-        catch (SQLException e) {e.printStackTrace(); }
+        catch (SQLException e) {
+            PostgreSQLErrorCodes e_code = exceptionToErrorCode(e);
+        }
 
         finally {
             try {
