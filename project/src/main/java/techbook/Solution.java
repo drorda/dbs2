@@ -35,27 +35,12 @@ public class Solution {
             try
             {
                 statement = connection.prepareStatement(
-                        "CREATE TABLE Groups("
-                                +"GroupID INTEGER NOT NULL AUTO_INCREMENT,"
-                                +"Name VARCHAR(100) NOT NULL,"
-
-                                +"PRIMARY KEY (GroupID),"
-                                +"UNIQUE (Name)"
-                                +")");
-                statement.execute();
-            }
-            catch (SQLException e) {e.printStackTrace();}
-
-            try
-            {
-                statement = connection.prepareStatement(
                         "CREATE TABLE GroupMembership("
                                 +"StudentID INTEGER,"
-                                +"GroupID INTEGER,"
+                                +"GroupName VARCHAR(100) NOT NULL,"
 
-                                +"PRIMARY KEY (StudentID, GroupID),"
-                                +"FOREIGN KEY (StudentID) REFERENCES Students(StudentID) ON DELETE CASCADE,"
-                                +"FOREIGN KEY (GroupID) REFERENCES Groups(GroupID) ON DELETE CASCADE"
+                                +"PRIMARY KEY (StudentID, GroupName),"
+                                +"FOREIGN KEY (StudentID) REFERENCES Students(StudentID) ON DELETE CASCADE"
                                 +")");
                 statement.execute();
             }
@@ -67,14 +52,13 @@ public class Solution {
                         "CREATE TABLE Posts("
                                 +"PostID INTEGER,"
                                 +"StudentID INTEGER,"
-                                +"GroupID INTEGER,"
+                                +"GroupName VARCHAR(100) NOT NULL,"
                                 +"Text TEXT NOT NULL,"
                                 +"Date DATE NOT NULL,"
 
                                 +"PRIMARY KEY (PostID),"
                                 +"CHECK (PostID > 0),"
-                                +"FOREIGN KEY (StudentID) REFERENCES Students(StudentID) ON DELETE CASCADE,"
-                                +"FOREIGN KEY (GroupID) REFERENCES Groups(GroupID) ON DELETE CASCADE"
+                                +"FOREIGN KEY (StudentID) REFERENCES Students(StudentID) ON DELETE CASCADE"
                                 +")");
                 statement.execute();
             }
@@ -151,13 +135,6 @@ public class Solution {
 
         try
         {
-            statement = connection.prepareStatement("DELETE FROM Groups");
-            statement.execute();
-        }
-        catch (SQLException e) {e.printStackTrace();}
-
-        try
-        {
             statement = connection.prepareStatement("DELETE FROM Students");
             statement.execute();
         }
@@ -197,13 +174,6 @@ public class Solution {
         try
         {
             statement = connection.prepareStatement("DROP TABLE GroupMembership");
-            statement.execute();
-        }
-        catch (SQLException e) {e.printStackTrace();}
-
-        try
-        {
-            statement = connection.prepareStatement("DROP TABLE Groups");
             statement.execute();
         }
         catch (SQLException e) {e.printStackTrace();}
@@ -256,12 +226,12 @@ public class Solution {
 
             //if group exists - join
             if(res.next() == true){
-                Integer groupId = res.getInt(1);
+                Integer GroupName = res.getInt(1);
                 statement = connection.prepareStatement(
                         "INSERT INTO GroupMembership"
                             + " VALUE (?,?)");
                 statement.setInt(1, student.getId());
-                statement.setInt(2, groupId);
+                statement.setInt(2, GroupName);
                 statement.execute();
             }
 
@@ -279,12 +249,12 @@ public class Solution {
                                 + " WHERE KEY = " + student.getFaculty());
                 ResultSet res_tmp = statement.executeQuery();
                 res_tmp.next();
-                Integer groupId = res_tmp.getInt(1);
+                Integer GroupName = res_tmp.getInt(1);
                 statement = connection.prepareStatement(
                         "INSERT INTO GroupMembership"
                                 + " VALUE (?,?)");
                 statement.setInt(1, student.getId());
-                statement.setInt(2, groupId);
+                statement.setInt(2, GroupName);
                 statement.execute();
             }
 
@@ -389,6 +359,13 @@ public class Solution {
      */
     public static ReturnValue addPost(Post post, String groupName)
     {
+        //check illegal params
+
+        //check that the student is a member
+
+        //check if post already exists
+
+        //database error
 
         return null;
     }
