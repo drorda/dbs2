@@ -36,7 +36,7 @@ public class Solution {
             {
                 statement = connection.prepareStatement(
                         "CREATE TABLE Groups("
-                                +"GroupID INTEGER NOT NULL AUTO_INCREMENT,"
+                                +"GroupID INTEGER, "
                                 +"Name VARCHAR(100) NOT NULL,"
 
                                 +"PRIMARY KEY (GroupID),"
@@ -66,14 +66,14 @@ public class Solution {
                 statement = connection.prepareStatement(
                         "CREATE TABLE Posts("
                                 +"PostID INTEGER,"
-                                +"StudentID INTEGER,"
+                                +"AuthorID  INTEGER,"
                                 +"GroupID INTEGER,"
                                 +"Text TEXT NOT NULL,"
                                 +"Date DATE NOT NULL,"
 
                                 +"PRIMARY KEY (PostID),"
                                 +"CHECK (PostID > 0),"
-                                +"FOREIGN KEY (StudentID) REFERENCES Students(StudentID) ON DELETE CASCADE,"
+                                +"FOREIGN KEY (AuthorID) REFERENCES Students(StudentID) ON DELETE CASCADE,"
                                 +"FOREIGN KEY (GroupID) REFERENCES Groups(GroupID) ON DELETE CASCADE"
                                 +")");
                 statement.execute();
