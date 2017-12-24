@@ -51,14 +51,14 @@ public class Solution {
                 statement = connection.prepareStatement(
                         "CREATE TABLE Posts("
                                 +"PostID INTEGER,"
-                                +"StudentID INTEGER,"
+                                +"AuthorID INTEGER,"
                                 +"GroupName VARCHAR(100) NOT NULL,"
                                 +"Text TEXT NOT NULL,"
                                 +"Date DATE NOT NULL,"
 
                                 +"PRIMARY KEY (PostID),"
                                 +"CHECK (PostID > 0),"
-                                +"FOREIGN KEY (StudentID) REFERENCES Students(StudentID) ON DELETE CASCADE"
+                                +"FOREIGN KEY (AuthorID) REFERENCES Students(StudentID) ON DELETE CASCADE"
                                 +")");
                 statement.execute();
             }

@@ -18,8 +18,8 @@
       <file leaf-file-name="Solution.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/techbook/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="178" column="53" lean-forward="false" selection-start-line="178" selection-start-column="53" selection-end-line="178" selection-end-column="53" />
+            <state relative-caret-position="194">
+              <caret line="58" column="56" lean-forward="true" selection-start-line="58" selection-start-column="56" selection-end-line="58" selection-end-column="56" />
               <folding>
                 <element signature="method#updateStudentFaculty#0;class#Solution#0" expanded="false" />
               </folding>
@@ -117,7 +117,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-11" />
     <option name="y" value="-11" />
     <option name="width" value="1378" />
@@ -815,9 +815,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="myTest - 2017.12.24 at 17h 00m 04s.xml">
-      <configuration name="myTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="myTest - 2017.12.24 at 17h 00m 17s.xml">
       <configuration name="myTest" configurationId="JUnit" />
     </history-entry>
@@ -845,12 +842,15 @@
     <history-entry file="myTest - 2017.12.24 at 17h 45m 24s.xml">
       <configuration name="myTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="myTest - 2017.12.24 at 17h 51m 03s.xml">
+      <configuration name="myTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="15654000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="-11" width="1378" height="780" extended-state="1" />
+    <frame x="-11" y="-11" width="1378" height="780" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1211,8 +1211,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/techbook/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="178" column="53" lean-forward="false" selection-start-line="178" selection-start-column="53" selection-end-line="178" selection-end-column="53" />
+        <state relative-caret-position="194">
+          <caret line="58" column="56" lean-forward="true" selection-start-line="58" selection-start-column="56" selection-end-line="58" selection-end-column="56" />
           <folding>
             <element signature="method#updateStudentFaculty#0;class#Solution#0" expanded="false" />
           </folding>
