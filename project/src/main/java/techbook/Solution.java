@@ -2,6 +2,7 @@ package techbook;
 
 import techbook.business.*;
 import techbook.data.DBConnector;
+import techbook.data.PostgreSQLErrorCodes;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -206,52 +207,48 @@ public class Solution {
         if(!(student instanceof Student))
             return BAD_PARAMS;
 
+        if(student.getId()< 0 || student.getFaculty()==null || student.getName()==null)
+            return BAD_PARAMS;
+
         Connection connection = DBConnector.getConnection();
         PreparedStatement statement = null;
 
-        try
-        {
+        try {
             //add to students
             statement = connection.prepareStatement(
                     "INSERT INTO Students"
-                        + " VALUES (?, ?, ?)");
+                            + " VALUES (?, ?, ?)");
             statement.setInt(1, student.getId());
             statement.setString(2, student.getName());
             statement.setString(3, student.getFaculty());
             statement.execute();
+        }
+        catch (SQLException e) {
+            if(Integer.valueOf(e.getSQLState())== PostgreSQLErrorCodes.UNIQUE_VIOLATION.getValue())
+                return ALREADY_EXISTS;
+            return ERROR;
+        }
 
+        try{
             //add to faculty group
             statement = connection.prepareStatement(
                     "INSERT INTO GroupMembership"
                         + " VALUES (?, ?)");
             statement.setInt(1,student.getId());
             statement.setString(2,student.getFaculty());
-
-
+            statement.execute();
 
         }
-
-
-        //TODO: finish return values.
-        catch (SQLException e) {
-            PostgreSQLErrorCodes e_code = exceptionToErrorCode(e);
-        }
+        catch (SQLException e) { return ERROR;}
 
         finally {
-            try {
-                statement.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-            try {
-                connection.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
+            close_stmt(statement,connection);
         }
-        return null;
+        return OK;
 
     }
+
+
 
 
     /**
@@ -266,8 +263,23 @@ public class Solution {
      */
     public static ReturnValue deleteStudent(Integer studentId)
     {
-        
-        return null;
+        Connection connection = DBConnector.getConnection();
+        PreparedStatement statement = null;
+        try{
+            statement = connection.prepareStatement(
+                    "DELETE FROM Students"
+                     + " WHERE StudentID = ?");
+
+            statement.setInt(1,studentId);
+            int affectedRows = statement.executeUpdate();
+            if(affectedRows==0) return NOT_EXISTS;
+        }
+        catch (SQLException e) { return ERROR;}
+
+        finally {
+            close_stmt(statement,connection);
+        }
+        return OK;
     }
 
 
@@ -285,11 +297,12 @@ public class Solution {
             return Student.badStudent();
 
         Connection connection = DBConnector.getConnection();
+        PreparedStatement statement = null;
 
         try
         {
 
-            PreparedStatement statement = connection.prepareStatement(
+            statement = connection.prepareStatement(
                     "SELECT * FROM Students "
                             + "WHERE StudentId = ?");
             statement.setInt(1,studentId);
@@ -323,7 +336,29 @@ public class Solution {
      */
     public static ReturnValue updateStudentFaculty(Student student){
 
-        return null;
+        Connection connection = DBConnector.getConnection();
+        PreparedStatement statement = null;
+
+        try{
+            statement = connection.prepareStatement(
+                    "SELECT * FROM Students "
+                            + "WHERE StudentId = ?");
+            statement.setInt(1,student.getId());
+            ResultSet res = statement.executeQuery();
+
+            if(!(res.next())) {//check if student exists
+                return NOT_EXISTS;
+            }
+            else{
+
+            }
+        }
+        catch (SQLException e) { return ERROR;}
+
+
+
+
+
 
 
     }
@@ -559,5 +594,28 @@ public class Solution {
     }
 
 
- }
+
+
+
+
+
+    /**
+     * Helper function that closes statement and connection
+     * @param statement
+     * @param connection
+     */
+    private static void close_stmt(PreparedStatement statement, Connection connection){
+        try {
+            statement.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        try {
+            connection.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+}
+
 
