@@ -207,8 +207,8 @@ public class Solution {
         if(!(student instanceof Student))
             return BAD_PARAMS;
 
-        if(student.getId()< 0 || student.getFaculty()==null || student.getName()==null)
-            return BAD_PARAMS;
+        /*if(student.getId()< 0 || student.getFaculty()==null || student.getName()==null)
+            return BAD_PARAMS;*/
 
         Connection connection = DBConnector.getConnection();
         PreparedStatement statement = null;
@@ -226,6 +226,9 @@ public class Solution {
         catch (SQLException e) {
             if(Integer.valueOf(e.getSQLState())== PostgreSQLErrorCodes.UNIQUE_VIOLATION.getValue())
                 return ALREADY_EXISTS;
+            else if(Integer.valueOf(e.getSQLState())== PostgreSQLErrorCodes.NOT_NULL_VIOLATION.getValue()
+                    || Integer.valueOf(e.getSQLState())== PostgreSQLErrorCodes.CHECK_VIOLATION.getValue())
+                return BAD_PARAMS;
             return ERROR;
         }
 
@@ -293,8 +296,8 @@ public class Solution {
 
     public static Student getStudentProfile(Integer studentId)
     {
-        if(!(studentId>0))
-            return Student.badStudent();
+        /*if(!(studentId>0))
+            return Student.badStudent();*/
 
         Connection connection = DBConnector.getConnection();
         PreparedStatement statement = null;
@@ -308,17 +311,20 @@ public class Solution {
             statement.setInt(1,studentId);
 
             ResultSet res = statement.executeQuery();
-            Student ret_val = Student.badStudent();
-            if(res.next() == true){
-                ret_val.setId(studentId);
-                ret_val.setName(res.getString(2));
-                ret_val.setFaculty(res.getString(3));
-            }
+            Student ret_val = new Student();
+            res.next();
+            ret_val.setId(studentId);
+            ret_val.setName(res.getString(2));
+            ret_val.setFaculty(res.getString(3));
+
 
             return ret_val;
         }
 
         catch (SQLException e) {return Student.badStudent();}
+        finally {
+            close_stmt(statement,connection);
+        }
     }
 
 
@@ -339,28 +345,50 @@ public class Solution {
         Connection connection = DBConnector.getConnection();
         PreparedStatement statement = null;
 
-        try{
+        try {
             statement = connection.prepareStatement(
                     "SELECT * FROM Students "
-                            + "WHERE StudentId = ?");
-            statement.setInt(1,student.getId());
+                            + "WHERE StudentId = ? AND Faculty  = ?");
+            statement.setInt(1, student.getId());
+            statement.setString(2, student.getFaculty());
             ResultSet res = statement.executeQuery();
 
-            if(!(res.next())) {//check if student exists
-                return NOT_EXISTS;
-            }
-            else{
-
+            if (res.next()) {//check if student with the same faculty exists
+                return ALREADY_EXISTS;
             }
         }
-        catch (SQLException e) { return ERROR;}
+        catch (SQLException e) {
+            if( Integer.valueOf(e.getSQLState())== PostgreSQLErrorCodes.CHECK_VIOLATION.getValue())
+                return BAD_PARAMS;
+            return ERROR;
+        }
 
+        try{
+            statement = connection.prepareStatement(
+                    "UPDATE Students SET Faculty = ? WHERE StudentId = ?");
+            statement.setString(1,student.getFaculty());
+            statement.setInt(2,student.getId());
+            int affectedRows = statement.executeUpdate();
+            if(affectedRows==0) return NOT_EXISTS;
 
+            statement = connection.prepareStatement(
+                    "INSERT INTO GroupMembership"
+                            + " VALUES (?, ?)");
+            statement.setInt(1,student.getId());
+            statement.setString(2,student.getFaculty());
+            statement.execute();
 
-
-
-
-
+        }
+        catch (SQLException e) {
+            if( Integer.valueOf(e.getSQLState())== PostgreSQLErrorCodes.CHECK_VIOLATION.getValue() ||
+                    Integer.valueOf(e.getSQLState())== PostgreSQLErrorCodes.NOT_NULL_VIOLATION.getValue())
+                return BAD_PARAMS;
+            return ERROR;
+        }
+        finally {
+            close_stmt(statement,connection);
+        }
+        return OK;
     }
 
 

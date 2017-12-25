@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5d8dd05-d185-47c4-92d9-986140db370a" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,41 +27,43 @@
       <file leaf-file-name="Solution.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/techbook/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="471">
-              <caret line="252" column="0" lean-forward="true" selection-start-line="252" selection-start-column="0" selection-end-line="252" selection-end-column="0" />
+            <state relative-caret-position="-1339">
+              <caret line="390" column="18" lean-forward="false" selection-start-line="390" selection-start-column="18" selection-end-line="390" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#createTables#0;class#Solution#0" expanded="false" />
                 <element signature="method#clearTables#0;class#Solution#0" expanded="false" />
                 <element signature="method#dropTables#0;class#Solution#0" expanded="false" />
-                <element signature="method#addStudent#0;class#Solution#0" expanded="false" />
                 <element signature="docComment;method#deleteStudent#0;class#Solution#0" expanded="false" />
                 <element signature="method#addPost#0;class#Solution#0" expanded="false" />
-                <marker date="1514142700381" expanded="true" signature="654:1014" ph="CREATE TABLE... Students" />
-                <marker date="1514142700381" expanded="true" signature="1240:1258" ph="CREATE TABLE... Groups" />
-                <marker date="1514142700381" expanded="true" signature="1240:1608" ph="CREATE TABLE... GroupMembership" />
-                <marker date="1514142700381" expanded="true" signature="1834:2392" ph="CREATE TABLE... Posts" />
-                <marker date="1514142700381" expanded="true" signature="2618:3056" ph="CREATE TABLE... Likes" />
-                <marker date="1514142700381" expanded="true" signature="3282:3820" ph="CREATE TABLE... Friends" />
-                <marker date="1514142700381" expanded="true" signature="4209:4228" ph="DELETE FROM " />
-                <marker date="1514142700381" expanded="true" signature="4405:4422" ph="DELETE FROM " />
-                <marker date="1514142700381" expanded="true" signature="4599:4616" ph="DELETE FROM " />
-                <marker date="1514142700381" expanded="true" signature="4793:4820" ph="DELETE FROM " />
-                <marker date="1514142700381" expanded="true" signature="4997:5017" ph="DELETE FROM " />
-                <marker date="1514142700381" expanded="true" signature="5397:5415" ph="DROP TABLE F... " />
-                <marker date="1514142700381" expanded="true" signature="5592:5608" ph="DROP TABLE L... " />
-                <marker date="1514142700381" expanded="true" signature="5785:5801" ph="DROP TABLE P... " />
-                <marker date="1514142700381" expanded="true" signature="5978:6004" ph="DROP TABLE G... " />
-                <marker date="1514142700381" expanded="true" signature="6181:6200" ph="DROP TABLE S... " />
-                <marker date="1514142700381" expanded="true" signature="7149:7219" ph="INSERT INTO Students... " />
-                <marker date="1514142700381" expanded="true" signature="7760:7830" ph="INSERT INTO GroupMembership... " />
-                <marker date="1514142700381" expanded="true" signature="8763:8783" ph="DELETE FROM " />
-                <marker date="1514142700381" expanded="true" signature="8763:8827" ph="DELETE FROM " />
-                <marker date="1514142700381" expanded="true" signature="8763:8828" ph="DELETE FROM " />
-                <marker date="1514142700381" expanded="true" signature="8763:8829" ph="DELETE FROM " />
-                <marker date="1514142700381" expanded="true" signature="9666:9741" ph="SELECT * FRO... Students" />
-                <marker date="1514142700381" expanded="true" signature="10878:10886" ph="SELECT *FROM... Students" />
-                <marker date="1514142700381" expanded="true" signature="10878:10953" ph="SELECT * FRO... Students" />
+                <marker date="1514212971566" expanded="true" signature="654:1014" ph="CREATE TABLE... Students" />
+                <marker date="1514212971566" expanded="true" signature="1240:1258" ph="CREATE TABLE... Groups" />
+                <marker date="1514212971566" expanded="true" signature="1240:1608" ph="CREATE TABLE... GroupMembership" />
+                <marker date="1514212971566" expanded="true" signature="1834:2392" ph="CREATE TABLE... Posts" />
+                <marker date="1514212971566" expanded="true" signature="2618:3056" ph="CREATE TABLE... Likes" />
+                <marker date="1514212971566" expanded="true" signature="3282:3820" ph="CREATE TABLE... Friends" />
+                <marker date="1514212971566" expanded="true" signature="4209:4228" ph="DELETE FROM " />
+                <marker date="1514212971566" expanded="true" signature="4405:4422" ph="DELETE FROM " />
+                <marker date="1514212971566" expanded="true" signature="4599:4616" ph="DELETE FROM " />
+                <marker date="1514212971566" expanded="true" signature="4793:4820" ph="DELETE FROM " />
+                <marker date="1514212971566" expanded="true" signature="4997:5017" ph="DELETE FROM " />
+                <marker date="1514212971566" expanded="true" signature="5397:5415" ph="DROP TABLE F... " />
+                <marker date="1514212971566" expanded="true" signature="5592:5608" ph="DROP TABLE L... " />
+                <marker date="1514212971566" expanded="true" signature="5785:5801" ph="DROP TABLE P... " />
+                <marker date="1514212971566" expanded="true" signature="5978:6004" ph="DROP TABLE G... " />
+                <marker date="1514212971566" expanded="true" signature="6181:6200" ph="DROP TABLE S... " />
+                <marker date="1514212971566" expanded="true" signature="7153:7223" ph="INSERT INTO Students... " />
+                <marker date="1514212971566" expanded="true" signature="8012:8082" ph="INSERT INTO GroupMembership... " />
+                <marker date="1514212971566" expanded="true" signature="9015:9035" ph="DELETE FROM " />
+                <marker date="1514212971566" expanded="true" signature="9015:9079" ph="DELETE FROM " />
+                <marker date="1514212971566" expanded="true" signature="9015:9080" ph="DELETE FROM " />
+                <marker date="1514212971566" expanded="true" signature="9015:9081" ph="DELETE FROM " />
+                <marker date="1514212971566" expanded="true" signature="9922:9997" ph="SELECT * FRO... Students" />
+                <marker date="1514212971566" expanded="true" signature="11165:11173" ph="SELECT *FROM... Students" />
+                <marker date="1514212971566" expanded="true" signature="11165:11240" ph="SELECT * FRO... Students" />
+                <marker date="1514212971566" expanded="true" signature="11165:11257" ph="SELECT * FRO... Students" />
+                <marker date="1514212971566" expanded="true" signature="11856:11907" ph="UPDATE Stude... " />
+                <marker date="1514212971566" expanded="true" signature="12201:12275" ph="INSERT INTO GroupMembership... " />
               </folding>
             </state>
           </provider>
@@ -80,15 +84,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="100">
               <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#201#202#0" expanded="false" />
-                <element signature="e#240#241#0" expanded="false" />
-                <element signature="e#299#300#0" expanded="false" />
-                <element signature="e#336#337#0" expanded="false" />
-                <element signature="e#385#386#0" expanded="false" />
-                <element signature="e#423#424#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -114,22 +110,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="100">
               <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="19" />
-              <folding>
-                <element signature="e#152#153#0" expanded="false" />
-                <element signature="e#177#178#0" expanded="false" />
-                <element signature="e#214#215#0" expanded="false" />
-                <element signature="e#242#243#0" expanded="false" />
-                <element signature="e#273#274#0" expanded="false" />
-                <element signature="e#300#301#0" expanded="false" />
-                <element signature="e#340#341#0" expanded="false" />
-                <element signature="e#372#373#0" expanded="false" />
-                <element signature="e#406#407#0" expanded="false" />
-                <element signature="e#436#437#0" expanded="false" />
-                <element signature="e#482#483#0" expanded="false" />
-                <element signature="e#520#521#0" expanded="false" />
-                <element signature="e#1707#1708#0" expanded="false" />
-                <element signature="e#1743#1744#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -147,7 +128,7 @@
       <file leaf-file-name="Example.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/techbook/Example.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="772">
+            <state relative-caret-position="2900">
               <caret line="116" column="50" lean-forward="false" selection-start-line="116" selection-start-column="37" selection-end-line="116" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -179,6 +160,11 @@
       <find>eff</find>
       <find>execu</find>
     </findStrings>
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -339,6 +325,8 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
   </component>
   <component name="RunManager" selected="JUnit.myTest">
     <configuration default="false" name="myTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -604,6 +592,7 @@
       <setting name="passParentEnv" value="true" />
       <setting name="launchBrowser" value="true" />
       <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -728,6 +717,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -769,6 +764,14 @@
     <option name="remove_strategy" value="false" />
   </component>
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f5d8dd05-d185-47c4-92d9-986140db370a" name="Default" comment="" />
+      <created>1514210501021</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1514210501021</updated>
+      <workItem from="1514210508627" duration="2481000" />
+    </task>
     <servers />
   </component>
   <component name="TestHistory">
@@ -777,16 +780,15 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8208000" />
+    <option name="totallyTimeSpent" value="10689000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3329384" sideWeight="0.49567568" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -800,7 +802,7 @@
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19891892" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24972972" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25405404" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24972972" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -810,6 +812,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3329384" sideWeight="0.49567568" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run with VisualVM" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JProfiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -817,12 +820,18 @@
       <window_info id="Debug with VisualVM" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/techbook/Solution.java</url>
-          <line>487</line>
+          <line>515</line>
           <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
@@ -1032,7 +1041,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
           <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1082,43 +1090,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/techbook/data/QuerieStrings.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/techbook/business/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="19" />
-          <folding>
-            <element signature="e#152#153#0" expanded="false" />
-            <element signature="e#177#178#0" expanded="false" />
-            <element signature="e#214#215#0" expanded="false" />
-            <element signature="e#242#243#0" expanded="false" />
-            <element signature="e#273#274#0" expanded="false" />
-            <element signature="e#300#301#0" expanded="false" />
-            <element signature="e#340#341#0" expanded="false" />
-            <element signature="e#372#373#0" expanded="false" />
-            <element signature="e#406#407#0" expanded="false" />
-            <element signature="e#436#437#0" expanded="false" />
-            <element signature="e#482#483#0" expanded="false" />
-            <element signature="e#520#521#0" expanded="false" />
-            <element signature="e#1707#1708#0" expanded="false" />
-            <element signature="e#1743#1744#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/techbook/UrielMendi_TestsPart1.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/techbook/AbstractTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#201#202#0" expanded="false" />
-            <element signature="e#240#241#0" expanded="false" />
-            <element signature="e#299#300#0" expanded="false" />
-            <element signature="e#336#337#0" expanded="false" />
-            <element signature="e#385#386#0" expanded="false" />
-            <element signature="e#423#424#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1126,7 +1103,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1148,7 +1124,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/techbook/Example.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="772">
+        <state relative-caret-position="2900">
           <caret line="116" column="50" lean-forward="false" selection-start-line="116" selection-start-column="37" selection-end-line="116" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1162,43 +1138,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/techbook/business/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/techbook/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="252" column="0" lean-forward="true" selection-start-line="252" selection-start-column="0" selection-end-line="252" selection-end-column="0" />
+        <state relative-caret-position="-1339">
+          <caret line="390" column="18" lean-forward="false" selection-start-line="390" selection-start-column="18" selection-end-line="390" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#createTables#0;class#Solution#0" expanded="false" />
             <element signature="method#clearTables#0;class#Solution#0" expanded="false" />
             <element signature="method#dropTables#0;class#Solution#0" expanded="false" />
-            <element signature="method#addStudent#0;class#Solution#0" expanded="false" />
             <element signature="docComment;method#deleteStudent#0;class#Solution#0" expanded="false" />
             <element signature="method#addPost#0;class#Solution#0" expanded="false" />
-            <marker date="1514142700381" expanded="true" signature="654:1014" ph="CREATE TABLE... Students" />
-            <marker date="1514142700381" expanded="true" signature="1240:1258" ph="CREATE TABLE... Groups" />
-            <marker date="1514142700381" expanded="true" signature="1240:1608" ph="CREATE TABLE... GroupMembership" />
-            <marker date="1514142700381" expanded="true" signature="1834:2392" ph="CREATE TABLE... Posts" />
-            <marker date="1514142700381" expanded="true" signature="2618:3056" ph="CREATE TABLE... Likes" />
-            <marker date="1514142700381" expanded="true" signature="3282:3820" ph="CREATE TABLE... Friends" />
-            <marker date="1514142700381" expanded="true" signature="4209:4228" ph="DELETE FROM " />
-            <marker date="1514142700381" expanded="true" signature="4405:4422" ph="DELETE FROM " />
-            <marker date="1514142700381" expanded="true" signature="4599:4616" ph="DELETE FROM " />
-            <marker date="1514142700381" expanded="true" signature="4793:4820" ph="DELETE FROM " />
-            <marker date="1514142700381" expanded="true" signature="4997:5017" ph="DELETE FROM " />
-            <marker date="1514142700381" expanded="true" signature="5397:5415" ph="DROP TABLE F... " />
-            <marker date="1514142700381" expanded="true" signature="5592:5608" ph="DROP TABLE L... " />
-            <marker date="1514142700381" expanded="true" signature="5785:5801" ph="DROP TABLE P... " />
-            <marker date="1514142700381" expanded="true" signature="5978:6004" ph="DROP TABLE G... " />
-            <marker date="1514142700381" expanded="true" signature="6181:6200" ph="DROP TABLE S... " />
-            <marker date="1514142700381" expanded="true" signature="7149:7219" ph="INSERT INTO Students... " />
-            <marker date="1514142700381" expanded="true" signature="7760:7830" ph="INSERT INTO GroupMembership... " />
-            <marker date="1514142700381" expanded="true" signature="8763:8783" ph="DELETE FROM " />
-            <marker date="1514142700381" expanded="true" signature="8763:8827" ph="DELETE FROM " />
-            <marker date="1514142700381" expanded="true" signature="8763:8828" ph="DELETE FROM " />
-            <marker date="1514142700381" expanded="true" signature="8763:8829" ph="DELETE FROM " />
-            <marker date="1514142700381" expanded="true" signature="9666:9741" ph="SELECT * FRO... Students" />
-            <marker date="1514142700381" expanded="true" signature="10878:10886" ph="SELECT *FROM... Students" />
-            <marker date="1514142700381" expanded="true" signature="10878:10953" ph="SELECT * FRO... Students" />
+            <marker date="1514212971566" expanded="true" signature="654:1014" ph="CREATE TABLE... Students" />
+            <marker date="1514212971566" expanded="true" signature="1240:1258" ph="CREATE TABLE... Groups" />
+            <marker date="1514212971566" expanded="true" signature="1240:1608" ph="CREATE TABLE... GroupMembership" />
+            <marker date="1514212971566" expanded="true" signature="1834:2392" ph="CREATE TABLE... Posts" />
+            <marker date="1514212971566" expanded="true" signature="2618:3056" ph="CREATE TABLE... Likes" />
+            <marker date="1514212971566" expanded="true" signature="3282:3820" ph="CREATE TABLE... Friends" />
+            <marker date="1514212971566" expanded="true" signature="4209:4228" ph="DELETE FROM " />
+            <marker date="1514212971566" expanded="true" signature="4405:4422" ph="DELETE FROM " />
+            <marker date="1514212971566" expanded="true" signature="4599:4616" ph="DELETE FROM " />
+            <marker date="1514212971566" expanded="true" signature="4793:4820" ph="DELETE FROM " />
+            <marker date="1514212971566" expanded="true" signature="4997:5017" ph="DELETE FROM " />
+            <marker date="1514212971566" expanded="true" signature="5397:5415" ph="DROP TABLE F... " />
+            <marker date="1514212971566" expanded="true" signature="5592:5608" ph="DROP TABLE L... " />
+            <marker date="1514212971566" expanded="true" signature="5785:5801" ph="DROP TABLE P... " />
+            <marker date="1514212971566" expanded="true" signature="5978:6004" ph="DROP TABLE G... " />
+            <marker date="1514212971566" expanded="true" signature="6181:6200" ph="DROP TABLE S... " />
+            <marker date="1514212971566" expanded="true" signature="7153:7223" ph="INSERT INTO Students... " />
+            <marker date="1514212971566" expanded="true" signature="8012:8082" ph="INSERT INTO GroupMembership... " />
+            <marker date="1514212971566" expanded="true" signature="9015:9035" ph="DELETE FROM " />
+            <marker date="1514212971566" expanded="true" signature="9015:9079" ph="DELETE FROM " />
+            <marker date="1514212971566" expanded="true" signature="9015:9080" ph="DELETE FROM " />
+            <marker date="1514212971566" expanded="true" signature="9015:9081" ph="DELETE FROM " />
+            <marker date="1514212971566" expanded="true" signature="9922:9997" ph="SELECT * FRO... Students" />
+            <marker date="1514212971566" expanded="true" signature="11165:11173" ph="SELECT *FROM... Students" />
+            <marker date="1514212971566" expanded="true" signature="11165:11240" ph="SELECT * FRO... Students" />
+            <marker date="1514212971566" expanded="true" signature="11165:11257" ph="SELECT * FRO... Students" />
+            <marker date="1514212971566" expanded="true" signature="11856:11907" ph="UPDATE Stude... " />
+            <marker date="1514212971566" expanded="true" signature="12201:12275" ph="INSERT INTO GroupMembership... " />
           </folding>
         </state>
       </provider>
