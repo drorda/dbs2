@@ -446,7 +446,7 @@ public class Solution {
             {
                 return ALREADY_EXISTS;
             }
-            //student1 == student2
+            //bad param
             if(Integer.valueOf(e.getSQLState()) == PostgreSQLErrorCodes.CHECK_VIOLATION.getValue())
             {
                 return BAD_PARAMS;
@@ -470,9 +470,28 @@ public class Solution {
      */
     public static ReturnValue makeAsNotFriends  (Integer studentId1, Integer studentId2)
     {
+        Connection connection = DBConnector.getConnection();
+        PreparedStatement statement;
 
-        return null;
+        try
+        {
+            statement = connection.prepareStatement("DELETE FROM Friends WHERE "
+                    + "(StudentID_A = "+studentId1+" AND StudentID_B = "+studentId2+" )"
+                    + "OR (StudentID_A = "+studentId2+" AND StudentID_B = "+studentId1+" )"
+            );
+            int count = statement.executeUpdate();
+            if( count == 0)
+            {
+                return NOT_EXISTS;
+            }
+        }
+        catch (SQLException e)
+        {
+            e.printStackTrace();
+            return ERROR;
+        }
 
+        return OK;
     }
 
     /**
@@ -487,8 +506,34 @@ public class Solution {
      */
     public static ReturnValue likePost(Integer studentId, Integer postId)
     {
-        return null;
+        Connection connection = DBConnector.getConnection();
+        PreparedStatement statement;
 
+        try
+        {
+            statement = connection.prepareStatement("INSERT INTO Likes VALUES ("
+                    + studentId +","
+                    + postId +")"
+            );
+            statement.execute();
+        }
+        catch (SQLException e)
+        {
+            //student or post does not exist
+            if(Integer.valueOf(e.getSQLState()) == PostgreSQLErrorCodes.FOREIGN_KEY_VIOLATION.getValue())
+            {
+                return NOT_EXISTS;
+            }
+            //like already exists
+            if(Integer.valueOf(e.getSQLState()) == PostgreSQLErrorCodes.UNIQUE_VIOLATION.getValue())
+            {
+                return ALREADY_EXISTS;
+            }
+            e.printStackTrace();
+            return ERROR;
+        }
+
+        return OK;
     }
 
     /**
@@ -502,8 +547,27 @@ public class Solution {
      */
     public static ReturnValue unlikePost(Integer studentId, Integer postId)
     {
+        Connection connection = DBConnector.getConnection();
+        PreparedStatement statement;
 
-        return null;
+        try
+        {
+            statement = connection.prepareStatement("DELETE FROM Likes WHERE "
+                    + "StudentID = "+studentId+" AND PostID = "+postId
+            );
+            int count = statement.executeUpdate();
+            if( count == 0)
+            {
+                return NOT_EXISTS;
+            }
+        }
+        catch (SQLException e)
+        {
+            e.printStackTrace();
+            return ERROR;
+        }
+
+        return OK;
     }
 
     /**
@@ -595,7 +659,7 @@ public class Solution {
             return ERROR;
         }
 
-    return OK;
+        return OK;
 
     }
 
@@ -609,7 +673,34 @@ public class Solution {
      */
     public static Feed getStudentFeed(Integer id)
     {
-        return null;
+        Connection connection = DBConnector.getConnection();
+        PreparedStatement statement;
+        Feed ret_feed = new Feed();
+        try{
+            statement = connection.prepareStatement(
+                    "SELECT Posts.PostID, Posts.AuthorID, Posts.Text, Posts.Date, postLikes.Likes " +
+                        "FROM Posts, postLikes " +
+                        "WHERE (Posts.AuthorID IN "+
+                        "(SELECT StudentID _A FROM Friends WHERE StudentID _B = ?) OR Posts.Author = ?) "+
+                        "AND Posts.GroupName IS NULL " +
+                        "GROUP BY Posts.Date DESC, postLikes.Likes DESC ");
+            statement.setInt(1,id);
+            statement.setInt(2,id);
+            ResultSet res = statement.executeQuery();
+            while (res.next()){
+                Post post_feed = new Post();
+                post_feed.setId(res.getInt(1));
+                post_feed.setAuthor(res.getInt(2));
+                post_feed.setText(res.getString(4));
+                post_feed.setDate(res.getTimestamp(5).toLocalDateTime());
+                ret_feed.add(post_feed);
+            }
+
+            return ret_feed;
+        }
+        catch (SQLException e){
+            return new Feed();
+        }
     }
 
     /**
@@ -621,7 +712,30 @@ public class Solution {
 
     public static Feed getGroupFeed(String groupName)
     {
-        return null;
+        Connection connection = DBConnector.getConnection();
+        PreparedStatement statement;
+        Feed ret_feed = new Feed();
+        try{
+            statement=connection.prepareStatement(
+                    "SELECT Posts.PostID, Posts.AuthorID, Posts.Text, Posts.Date, postLikes.Likes " +
+                        " FROM Posts, postLikes WHERE Posts.GroupName = " + groupName +
+                        " AND postLikes.PostID = Posts.PostID" +
+                        " ORDER BY Posts.Date DESC, postLikes.Likes DESC ");
+            ResultSet res = statement.executeQuery();
+            while (res.next()){
+                Post post_feed = new Post();
+                post_feed.setId(res.getInt(1));
+                post_feed.setAuthor(res.getInt(2));
+                post_feed.setText(res.getString(4));
+                post_feed.setDate(res.getTimestamp(5).toLocalDateTime());
+                ret_feed.add(post_feed);
+            }
+
+            return ret_feed;
+        }
+        catch (SQLException e){
+            return new Feed();
+        }
     }
 
     /**
