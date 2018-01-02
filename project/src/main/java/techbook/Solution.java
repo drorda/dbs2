@@ -752,7 +752,33 @@ public class Solution {
 
     public static ArrayList<Student> getPeopleYouMayKnowList(Integer studentId)
     {
-        return null;
+        Connection connection = DBConnector.getConnection();
+        PreparedStatement statement;
+        try{
+            statement=connection.prepareStatement(
+                    "SELECT * FROM Students WHERE StudentID  in (" +
+                            "SELECT f2.StudentID_B "+
+                            "From Friends f1 " +
+                            "LEFT JOIN Friends f2 ON f1.StudentID_B = f2.StudentID_A " +
+                            "LEFT JOIN GroupMembership as g ON f2.StudentID_B = g.StudentID "+
+                            "WHERE f1.StudentID_A <> f2.StudentID_B AND f1.StudentID_A = ? AND "+
+                            "g.GroupName in (SELECT GroupName FROM g WHERE StudentID = ?))");
+            statement.setInt(1,studentId);
+            statement.setInt(2,studentId);
+            ResultSet res = statement.executeQuery();
+            ArrayList<Student> ret_val = new ArrayList<Student>();
+            while(res.next()) {
+                Student ret_student = new Student();
+                ret_student.setId(studentId);
+                ret_student.setName(res.getString(2));
+                ret_student.setFaculty(res.getString(3));
+                ret_val.add(ret_student);
+            }
+            return null;
+        }
+        catch (SQLException e){
+            return new ArrayList<Student>();
+        }
     }
 
     /**
